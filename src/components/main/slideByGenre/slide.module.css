@@ -1,0 +1,18 @@
+.slide_container{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    margin: 100px auto;
+}
+.slide_container::-webkit-scrollbar {
+  width: 2px;
+  height: 5px;
+}
+
+.slide_container::-webkit-scrollbar-thumb {
+  background-color: #4c2862;
+  border-radius: 5px;
+  cursor: pointer;
+}

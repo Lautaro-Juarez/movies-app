@@ -1,0 +1,8 @@
+.movies_list {
+  width: 94%;
+  margin: 50px auto;
+  padding: 0;
+  display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}

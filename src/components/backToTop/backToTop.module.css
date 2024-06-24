@@ -1,0 +1,19 @@
+.back_top {
+  position: fixed;
+  right: 40px;
+  bottom: 50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color:black;
+  opacity: .7;
+  text-align: center;
+  /* animaciones */
+  .up {
+    color: white;
+    font-size: 18px;
+    margin-top: 12px;
+  }
+}
+  

@@ -1,0 +1,136 @@
+.container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  .poster_section {
+    width: 100%;
+    height: 70vh;
+  }
+  .poster_container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    object-fit: cover;
+  }
+  .genres {
+    width: 84%;
+    height: 10%;
+    margin: 30px auto 0;
+    list-style: none;
+    display: flex;
+    font-size: 0.8rem;
+    padding: 0%;
+    text-align: left;
+    .genre {
+      width: auto;
+      margin: 0 4px;
+      text-decoration: underline;
+      color: white;
+    }
+    .genre:first-child {
+      margin-left: 0;
+    }
+  }
+  .average{
+    width: 26%;
+    height: 4%;
+    position: absolute;
+    z-index: 3;
+    left: -18%;
+    top: 14%;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    animation: Translate 3s ease; 
+  }  
+
+  .shadow {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 00px;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+  }
+  .button {
+    width: 70%;
+    max-width: 600px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4c2862;
+    outline: none;
+    color: white;
+    position: relative;
+    z-index: 4;
+    bottom: 80px;
+    cursor: pointer;
+    i {
+      margin-right: 10px;
+    }
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .shadow_title {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 7%;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
+  }
+  .about_movie{
+    margin: 60px auto;
+  }
+  .overview_container {
+    width: 86%;
+    margin: auto;
+    font-size: 0.9rem;
+    text-align: left;
+    h4 {
+      width: 100%;
+      text-align: center;
+    }
+    .overview {
+      font-weight: 100;
+      text-shadow: 0.2px 0.2px 0.2px white;
+    }
+  }
+}
+/* animations */
+
+@keyframes Translate {
+  0% {
+    transform: translateX(-80%);
+    left: -18%;
+  }
+  20% {
+    transform: translateX(0%);
+    left: 0;
+  }
+  40% {
+    transform: translateX(0%);
+    left: 0;
+  }
+  60% {
+    transform: translateX(0%);
+    left: 0;
+  }
+  80% {
+    transform: translateX(0%);
+
+  }
+  100% {
+    transform: translateX(0%);
+    left: -18%;
+  }
+}
+

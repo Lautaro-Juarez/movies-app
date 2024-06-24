@@ -1,0 +1,48 @@
+.movie{
+    min-width: 180px;
+    width:180px;
+    height: 288px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 30px 10px;
+    position: relative;
+    .img_container{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: container;
+            transition: .7s;
+        }
+        .see_movie{
+            position: absolute;
+            bottom: 48%;
+            left: 20%;
+            font-weight: 600;
+            display: none;
+            transition: .7s;
+        }
+    }
+    .img_container:hover{
+        img{
+           scale: 1.02;
+           opacity: .8;
+        }
+        .see_movie{
+            display: block;
+        }
+    }
+}
+.title{
+    position: absolute;
+    bottom: -6%;
+    white-space: nowrap;
+   width: 100%;
+   overflow: hidden;
+   text-overflow: ellipsis; 
+   color: #e5e5e5;
+   margin: 0;
+}

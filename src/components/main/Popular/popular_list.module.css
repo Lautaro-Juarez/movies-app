@@ -1,0 +1,21 @@
+.character {
+  width: 140px;
+  height: 180px;
+  list-style:none;
+  text-align: center;
+  margin: 10px;
+  .image_contain {
+    min-width: 120px;
+    width: 80%;
+    height: 80%;
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   
+    }
+  }
+  .name{
+    font-size: 1rem;
+  }
+}
